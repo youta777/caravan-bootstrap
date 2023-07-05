@@ -2,10 +2,14 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- FontAwesomeの読み込み -->
-    <script src="https://kit.fontawesome.com/*******.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8e54a0091e.js" crossorigin="anonymous"></script>
     <!-- CSSファイルの読み込み -->
     <link rel="stylesheet" href="style.css" />
+    <!-- bootstrapの読み込み -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>CARAVAN</title>
   </head>
 
@@ -13,9 +17,7 @@
     <!-- header -->
     <header>
       <h1 class="heading">
-        <a href="index.html">
-          CARAVAN
-        </a>
+        <a href="index.html">CARAVAN</a>
       </h1>
       <div class="social">
         <i class="fab fa-facebook-square"></i>
@@ -25,14 +27,22 @@
     </header>
 
     <!-- navigation -->
-    <nav>
-      <ul class="nav-list">
-        <li class="nav-list-item">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="nav-list-item">About</li>
-        <li class="nav-list-item">Topic</li>
-      </ul>
+    <nav class="navbar navbar-expand navbar-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Topic</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <!-- main-visual用のdiv -->
@@ -122,14 +132,22 @@
             </section>
           </div>
         </div>
-        <div class="pagination">
-          <p><<</p>
-          <p><</p>
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
-          <p>></p>
-          <p>>></p>
+        <div class="page navigation">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
       <div class="sidebar">
